@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_layout"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin8"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="@dimen/margin8"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:onClick="daftar"
+            android:id="@+id/menu_daftar"
+            android:textColor="@color/colorFontHeader"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30sp"
+            android:text="Daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:onClick="login"
+            android:id="@+id/menu_login"
+            android:textColor="@color/colorFontHeader"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30sp"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:onClick="keluar"
+            android:id="@+id/menu_keluar"
+            android:textColor="@color/colorFontHeader"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30sp"
+            android:text="Keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

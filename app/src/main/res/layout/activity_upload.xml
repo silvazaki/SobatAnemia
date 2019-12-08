@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".UploadActivity">
+    <include layout="@layout/header_layout"/>
+    <LinearLayout
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/cmtp_white"
+            android:background="@color/colorFontHeader"
+            android:id="@+id/tv_file"
+            android:layout_marginRight="@dimen/margin8"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_choose_file"
+            android:textColor="@color/cmtp_white"
+            android:background="@color/colorFontHeader"
+            android:text="pilih file"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:weightSum="3"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_upload_file"
+            android:layout_gravity="end"
+            android:textColor="@color/cmtp_white"
+            android:background="@color/colorFontHeader"
+            android:text="Upload"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
